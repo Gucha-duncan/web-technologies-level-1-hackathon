@@ -22,3 +22,73 @@
 -->
 
 <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web-technologies-level-1-hackathon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>WEB DEV HACKATHON LV1</h1>
+  <p>This event is designed to test your skills in HTML elements, including HTML structure, paragraphs, links, images, forms, and CSS. Whether you're a total beginner or looking to brush up on your skills, this hackathon will provide you with an opportunity to practice and showcase your abilities</p>
+   <div>
+  <a href="https://docs.google.com/document/d/11qxcmUcfZQdam5D_13OsaF27aygvmipDp63OOAdBnD4/preview" target="_blank">Get Hackathon Questions Here</a>
+  
+   </div>
+   <div class="images">
+    <img src="images/plp.webp" alt="PLP learners">
+   </div>
+   <div class="container">
+    <form action="#" method="post">
+        <h2>Registration Form</h2>
+        <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="input-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div class="input-group radio-group">
+            <span>Gender:</span>
+            <label for="male"><input type="radio" id="male" name="gender" value="male" required> Male</label>
+            <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+            <label for="other"><input type="radio" id="other" name="gender" value="other"> Other</label>
+        </div>
+        <div class="input-group">
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="Art and Craft">Art and Craft</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Geography">Geography</option>
+                <option value="History">History</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <input type="hidden" name="sessionId" value="ABC123">
+        <div class="btn-group">
+            <button type="reset">Clear</button>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
